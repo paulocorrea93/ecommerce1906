@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import { PRODUCTS } from "../../products";
 
 const Shop = () => {
   return (
@@ -7,10 +8,12 @@ const Shop = () => {
         <h1>Paulo Correa Tech</h1>
       </div>
       <div className="produtcs">
-        
+        {PRODUCTS.map((product) => (
+          <Product />
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;
