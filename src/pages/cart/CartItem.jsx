@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import ShopContextProvider from "../../context/ShopContextProvider";
+import ShopContextProvider, { ShopContext } from "../../context/ShopContextProvider";
 
 const CartItem = (props) => {
   const { id, productName, price, productImage } = props.data;
-  const {cartItems} = useContext(ShopContextProvider)
+  const { cartItems } = useContext(ShopContext);
 
   return (
     <div className="cartItem">
@@ -20,7 +20,7 @@ const CartItem = (props) => {
         </div>
       </div>
     </div>
-  );  
+  );
 };
 
 export default CartItem;
