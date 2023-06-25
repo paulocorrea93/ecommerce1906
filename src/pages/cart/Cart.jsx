@@ -34,3 +34,5 @@ const Cart = () => {
 };
 
 export default Cart;
+
+//versão 1.0 finalizada
